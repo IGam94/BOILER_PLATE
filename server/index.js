@@ -37,7 +37,9 @@ app.post('/api/users/register', (req, res) => {
     })
   })
 })
-
+app.get('/api/hello',(req,res)=>{
+  res.send("안녕하세요~")
+})
 app.post('/api/users/login', (req, res) => {
 
   // console.log('ping')
